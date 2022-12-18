@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-image: url(/images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 100vh;
+    max-width: 100vw;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.container {
+    max-width: 100vw;
+    max-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-part {
+    width: 759px;
+    margin: 100px 0 0 150px;
+}
+
+.info__title {
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 108px;
+    color: #FFFFFF;
+}
+
+.info-title__span {
+    color: #FC6310;
+}
+
+.info__desc {
+    display: flex;
+    align-items: baseline;
+}
+
+.circle {
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    margin-right: 19px;
+    background-color: #fff;
+}
+
+.info-desc__text {
+    max-width: 403px;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 45px;
+    margin: 45px 0 110px;
+}
+
+.comment-section {
+    display: flex;
+}
+
+.comment__avatar-icon {
+    width: 81px;
+    height: 81px;
+}
+
+.comment-section__text {
+    margin-left: 18px;
+    width: 457px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 179.69%;
+}
+
+.comment-section__text a {
+    color: #FC6310;
+}
+
+.mars {
+    margin: 100px 150px 0 0;
+    max-width: 600px;
+    position: relative;
+    max-height: 600px;
+}
+
+.mars-img {
+    max-height: 510px;
+    max-width: 510px;
+    animation: mars-img 50s infinite linear;
+}
+
+@keyframes mars-img {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.ufo-img {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    animation: ufo-img 25s infinite linear;
+}
+
+@keyframes ufo-img {
+    0% {
+        transform: translate(0, 0) rotate(45deg);
+    }
+    25% {
+        transform: translate(0, 520px) rotate(135deg);
+    }
+    50% {
+        transform: translate(-540px, 520px) rotate(225deg);
+    }
+    75% {
+        transform: translate(-540px, 0) rotate(315deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(405deg);
+    }
+}
+
+footer {
+    margin-top: 80px;
+}
+
+.loading {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(31, 77, 141);
+}
+
+.card {
+    width: 10px;
+    height: 20px;
+    background-color: white;
+    margin: 2px;
+    animation-name: loading-animation;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.bar1 {
+    animation-name: loading-animation;
+    animation-delay: 0.1s;
+}
+
+.bar2 {
+    animation-name: loading-animation;
+    animation-delay: 0.2s;
+}
+
+.bar3 {
+    animation-name: loading-animation;
+    animation-delay: 0.3s;
+}
+
+.bar4 {
+    animation-name: loading-animation;
+    animation-delay: 0.4s;
+}
+
+.bar5 {
+    animation-name: loading-animation;
+    animation-delay: 0.5s;
+}
+
+@keyframes loading-animation {
+    0% {
+        transform: scaleY(1);
+    }
+    30% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(5);
+    }
+    70% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* font-family: 'Poppins', sans-serif; */
